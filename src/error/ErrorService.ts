@@ -36,11 +36,6 @@ export class ErrorService {
         },
         {
           statusCode: 200,
-          code: 40,
-          message: "The function executed successfully",
-        },
-        {
-          statusCode: 200,
           code: 50,
           message: "The bookmark already exists on our GitHub",
         }

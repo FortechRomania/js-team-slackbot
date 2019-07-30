@@ -59,8 +59,5 @@ export class SlackRouter {
       await this.githubService.update(encodedContent, bookmarks.sha);
 
       await this.slackService.sendMessage(`Added *${bookmarkData.value}* to Daily Bookmarks`)
-
-      //prevent the success response
-      throw this.errorService.getErrorMessage(40);
     });
 }
