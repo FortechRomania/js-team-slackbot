@@ -1,0 +1,10 @@
+{
+    "port": 3000,
+    "channelID": "CLQ75L11B",
+    "token": "YOUR_GITHUB_TOKEN",
+    "defaultBranch": "master",
+    "username": "YOUR_GITHUB_USERNAME",
+    "name": "YOUR_GITHUB_NAME",
+    "email": "YOUR_GITHUB_EMAIL",
+    "slackToken": "BOT_OR_USER_TOKEN"
+}
