@@ -42,11 +42,14 @@ export class UtilService {
   startsWithText(text: string, word: string): boolean {
     return text.toLowerCase().startsWith(word);
   }
+  addLeadingZero(number: number | string){
+    return (`0${number}`).slice(-2);
+  }
   getTodayDate(){
     const date = new Date();
     const year = date.getFullYear();
-    const month = (`0${date.getMonth() + 1}`).slice(-2);
-    const day = date.getDate();
+    const month = this.addLeadingZero(date.getMonth() + 1);
+    const day = this.addLeadingZero(date.getDate());
     return `${day}.${month}.${year}`
   }
 }
